@@ -4,7 +4,6 @@ import {
   builds,
   certifications,
   education,
-  otherSite,
   profile,
   roles,
   stages,
@@ -52,7 +51,6 @@ export default function Home() {
             <a className="nav-anchor" href="#builds">Builds</a>
             <a className="nav-anchor" href="#credentials">Credentials</a>
             <a className="nav-anchor" href="#contact">Contact</a>
-            <a className="nav-alt" href={otherSite.url}>{otherSite.label}</a>
           </nav>
         </div>
       </header>
@@ -215,7 +213,7 @@ export default function Home() {
 
       <footer className="footer wrap">
         <span>© {new Date().getFullYear()} {profile.name}</span>
-        <a href={otherSite.url}>View the classic layout of this site</a>
+        <span>{profile.location}</span>
       </footer>
     </>
   );

@@ -10,13 +10,6 @@ export const profile = {
   github: "https://github.com/nannapp12",
 };
 
-// Link to the other version of this site. Set NEXT_PUBLIC_OTHER_SITE_URL in Vercel
-// (Project → Settings → Environment Variables) once the other site is deployed.
-export const otherSite = {
-  label: "Classic layout",
-  url: process.env.NEXT_PUBLIC_OTHER_SITE_URL || "http://localhost:3000",
-};
-
 // Career timeline. Months are 1–12; an end of null means "present".
 export type Role = {
   title: string;
